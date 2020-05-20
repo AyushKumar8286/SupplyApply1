@@ -44,6 +44,6 @@ s.resources = "SupplyApply/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,pdf}"
 
 
 # 10
-s.swift_version = "5"
+s.swift_version = "4"
 
 end

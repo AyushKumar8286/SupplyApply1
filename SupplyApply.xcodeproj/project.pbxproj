@@ -321,7 +321,7 @@
 		8AC0BA78245C4C3000A587A2 /* SortList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortList.swift; sourceTree = "<group>"; };
 		8AC0F54924698D2800472701 /* FilterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterData.swift; sourceTree = "<group>"; };
 		8AC9EC3324545247000CD1ED /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
-		8ACE4B53247511B700B3EC49 /* SupplyApply.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = SupplyApply.podspec; sourceTree = SOURCE_ROOT; };
+		8ACE4B53247511B700B3EC49 /* SupplyApply.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SupplyApply.podspec; sourceTree = SOURCE_ROOT; };
 		8AD1618F245ABC0500421348 /* DealoftheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealoftheDayViewController.swift; sourceTree = "<group>"; };
 		8AD16190245ABC0500421348 /* DealoftheDayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealoftheDayViewController.xib; sourceTree = "<group>"; };
 		8AECA27F246529DC0022F124 /* OrderDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -1382,7 +1382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.supply.apply;
 				PRODUCT_NAME = "Supply Apply";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1407,7 +1407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.supply.apply;
 				PRODUCT_NAME = "Supply Apply";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
