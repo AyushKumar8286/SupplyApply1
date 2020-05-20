@@ -6,6 +6,7 @@ s.ios.deployment_target = '12.0'
 s.name = "SupplyApply"
 s.summary = "SupplyApply lets a user select an ice cream flavor."
 s.requires_arc = true
+s.static_framework = true
 
 # 2
 s.version = "0.1.0"
