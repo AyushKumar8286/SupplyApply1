@@ -151,7 +151,9 @@
 		8AC0BA79245C4C3000A587A2 /* SortList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC0BA78245C4C3000A587A2 /* SortList.swift */; };
 		8AC0F54A24698D2800472701 /* FilterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC0F54924698D2800472701 /* FilterData.swift */; };
 		8AC9EC3424545247000CD1ED /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9EC3324545247000CD1ED /* ProductInfo.swift */; };
-		8ACE4B54247511B700B3EC49 /* SupplyApply.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8ACE4B53247511B700B3EC49 /* SupplyApply.podspec */; };
+		8ACE4B6024752CBC00B3EC49 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACE4B5C24752CBB00B3EC49 /* RangeSlider.swift */; };
+		8ACE4B6124752CBC00B3EC49 /* RangeSliderKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACE4B5D24752CBB00B3EC49 /* RangeSliderKnob.swift */; };
+		8ACE4B6224752CBC00B3EC49 /* RangeSliderTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACE4B5E24752CBB00B3EC49 /* RangeSliderTrack.swift */; };
 		8AD16191245ABC0500421348 /* DealoftheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1618F245ABC0500421348 /* DealoftheDayViewController.swift */; };
 		8AD16192245ABC0500421348 /* DealoftheDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD16190245ABC0500421348 /* DealoftheDayViewController.xib */; };
 		8AECA281246529DC0022F124 /* OrderDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AECA27F246529DC0022F124 /* OrderDetailTableViewCell.swift */; };
@@ -321,7 +323,9 @@
 		8AC0BA78245C4C3000A587A2 /* SortList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortList.swift; sourceTree = "<group>"; };
 		8AC0F54924698D2800472701 /* FilterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterData.swift; sourceTree = "<group>"; };
 		8AC9EC3324545247000CD1ED /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
-		8ACE4B53247511B700B3EC49 /* SupplyApply.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SupplyApply.podspec; sourceTree = SOURCE_ROOT; };
+		8ACE4B5C24752CBB00B3EC49 /* RangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		8ACE4B5D24752CBB00B3EC49 /* RangeSliderKnob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSliderKnob.swift; sourceTree = "<group>"; };
+		8ACE4B5E24752CBB00B3EC49 /* RangeSliderTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSliderTrack.swift; sourceTree = "<group>"; };
 		8AD1618F245ABC0500421348 /* DealoftheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealoftheDayViewController.swift; sourceTree = "<group>"; };
 		8AD16190245ABC0500421348 /* DealoftheDayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealoftheDayViewController.xib; sourceTree = "<group>"; };
 		8AECA27F246529DC0022F124 /* OrderDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -573,8 +577,8 @@
 		28F1461C23FC0C8D0038CB37 /* SupplyApply */ = {
 			isa = PBXGroup;
 			children = (
-				8ACE4B53247511B700B3EC49 /* SupplyApply.podspec */,
 				28FAB7B82428A8BC00271C43 /* Supply Apply.entitlements */,
+				8ACE4B5B24752CBB00B3EC49 /* SwiftRangeSlider */,
 				28F1471023FC0E550038CB37 /* Data */,
 				28F1463123FC0E520038CB37 /* Constants */,
 				28F1463C23FC0E520038CB37 /* Helpers */,
@@ -901,6 +905,16 @@
 			path = SortCell;
 			sourceTree = "<group>";
 		};
+		8ACE4B5B24752CBB00B3EC49 /* SwiftRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				8ACE4B5C24752CBB00B3EC49 /* RangeSlider.swift */,
+				8ACE4B5D24752CBB00B3EC49 /* RangeSliderKnob.swift */,
+				8ACE4B5E24752CBB00B3EC49 /* RangeSliderTrack.swift */,
+			);
+			path = SwiftRangeSlider;
+			sourceTree = "<group>";
+		};
 		8AECA27E246528710022F124 /* OrderSummaryCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -949,8 +963,8 @@
 				28F1461623FC0C8D0038CB37 /* Sources */,
 				28F1461723FC0C8D0038CB37 /* Frameworks */,
 				28F1461823FC0C8D0038CB37 /* Resources */,
-				2DC2B43C555D23B4958F0102 /* [CP] Embed Pods Frameworks */,
-				22A424363499674245D1E62E /* [CP] Copy Pods Resources */,
+				EBA2CE031B718AEFD300E7A5 /* [CP] Embed Pods Frameworks */,
+				CFFC51A31CCB8C04B68453FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1068,7 +1082,6 @@
 				28F147B223FC0E560038CB37 /* LoginViewController.xib in Resources */,
 				8A3D2A182457113B00809400 /* FaqViewController.xib in Resources */,
 				28721A79241B6EDA00B65546 /* Raleway-SemiBold.ttf in Resources */,
-				8ACE4B54247511B700B3EC49 /* SupplyApply.podspec in Resources */,
 				28721A80241B6EDA00B65546 /* Raleway-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1076,40 +1089,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22A424363499674245D1E62E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2DC2B43C555D23B4958F0102 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C5BD59CF8B71E05AF3390D61 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1132,6 +1111,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CFFC51A31CCB8C04B68453FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA2CE031B718AEFD300E7A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SupplyApply/Pods-SupplyApply-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1144,6 +1157,7 @@
 				28F147B923FC0E560038CB37 /* APIRouteConfiguration.swift in Sources */,
 				28F1472923FC0E550038CB37 /* NetworkState.swift in Sources */,
 				2819739924346D4D0041B235 /* SubCategoryController.swift in Sources */,
+				8ACE4B6024752CBC00B3EC49 /* RangeSlider.swift in Sources */,
 				8AD16191245ABC0500421348 /* DealoftheDayViewController.swift in Sources */,
 				8AB97B0E2462FE48007B7DBE /* StateList.swift in Sources */,
 				2839ACE923FD1EAE0035E9EB /* Navigator.swift in Sources */,
@@ -1151,7 +1165,9 @@
 				28F1473E23FC0E560038CB37 /* Extensions.swift in Sources */,
 				28AEA482242B32D50024B67A /* DashboardController.swift in Sources */,
 				8A638E4B24705CFA0041FBE6 /* NoticationTableViewCell.swift in Sources */,
+				8ACE4B6224752CBC00B3EC49 /* RangeSliderTrack.swift in Sources */,
 				8A63EBBF246930B5007C1BAC /* SearchproductTableViewCell.swift in Sources */,
+				8ACE4B6124752CBC00B3EC49 /* RangeSliderKnob.swift in Sources */,
 				28AEA485242B42870024B67A /* Categories.swift in Sources */,
 				8AF7D5DB2464238400E57823 /* PaymentMethodList.swift in Sources */,
 				8A27D3EE246A578100BAF7C7 /* FilterColorCollectionViewCell.swift in Sources */,
@@ -1303,7 +1319,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1357,7 +1372,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
